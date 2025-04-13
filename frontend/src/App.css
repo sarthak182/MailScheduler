@@ -1,0 +1,45 @@
+/* app.css */
+
+/* Container for the whole app */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Style for the save button */
+.save-button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* Style for ReactFlow component container */
+.reactflow-wrapper {
+  width: 80%;  /* Set the width to 80% of the screen width */
+  height: 70vh;  /* Set the height to 70% of the screen height */
+  border: 1px solid #ccc;  /* Optional border for clarity */
+  border-radius: 8px;  /* Optional rounded corners */
+  background-color: white;  /* Background color of the flow area */
+}
+
+.react-flow__edge-path {
+  stroke: #000; /* Black color for edges */
+  stroke-width: 2px; /* Edge thickness */
+}
+
+.react-flow__edge {
+  transition: stroke 0.3s ease; /* Optional: Smooth transition for edges */
+}

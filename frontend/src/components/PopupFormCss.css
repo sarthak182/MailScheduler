@@ -1,0 +1,77 @@
+/* Backdrop behind the popup */
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Popup container styling */
+.popup-style {
+  animation: popupFadeIn 0.3s ease-out forwards;
+  transform: scale(0.9);
+  opacity: 0;
+
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  width: 350px; /* Increased width of the popup */
+  height: 400px; /* Increased height for better spacing */
+  text-align: center;
+}
+
+/* Welcome heading */
+.welcome-container {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form inputs and textarea */
+.form-container input,
+.form-container textarea {
+  width: 80%; /* Set width to 80% of the popup's width */
+  padding: 12px; /* Increased padding for better visibility */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensures padding does not overflow */
+}
+
+/* Buttons */
+.login-button {
+  width: 48%; /* Reduced width for side-by-side buttons */
+  padding: 12px; /* Increased padding */
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Added space between buttons */
+}
+
+.login-button:hover {
+  background-color: #555;
+}
+
+/* Animation for fade-in */
+@keyframes popupFadeIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
